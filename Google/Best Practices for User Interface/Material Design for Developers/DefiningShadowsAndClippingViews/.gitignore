@@ -17,6 +17,10 @@ gradle/
 # User-specific configurations
 .idea/
 
+#test
+androidTest
+test
+
 *.iml
 
 # OS-specific files

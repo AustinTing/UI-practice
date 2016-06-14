@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gmail.austintingwork.definingshadowsandclippingviews.MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:elevation="2dp"
+        android:translationZ="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:text="111111111!"
+        android:background="@android:color/darker_gray"
+/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:elevation="4dp"
+        android:translationZ="0dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:text="222222222"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+         />
+
+
+</FrameLayout>
