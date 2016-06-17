@@ -1,302 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
+    android:background="#E0E0E0"
+    android:padding="16dp"
+    android:orientation="horizontal"
+    android:columnCount="3"
+    android:layout_columnWeight="3"
     tools:context="com.gmail.austintingwork.workingwithdrawables.MainActivity">
+    <TextView
+        android:background="@drawable/item_border"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_columnWeight="1"
+        android:text="tintMode" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <!--沒有透明的png 原始檔-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="沒有透明的png 原始檔" />
+    <TextView
+        android:background="@drawable/item_border"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_columnWeight="1"
+        android:text="圖片\n完全沒有透明" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar" />
+    <TextView
+        android:background="@drawable/item_border"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_columnWeight="1"
+        android:text="圖片\n背景透明" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tint預設" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="原始檔" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar"
-            android:tint="@android:color/holo_blue_light" />
+    <ImageView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
+    <ImageView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_over" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="tint預設" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_over" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_in" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_in" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="src_over" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_atop" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="src_over"
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_atop" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = multiply" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="src_over"
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="multiply" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="src_in" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = screen" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="src_in"
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="screen" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = add" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="src_in"
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/goldstar"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="add" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="src_atop" />
 
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="src_atop"
 
-        <!--背景有透明的png 原始檔-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="沒有透明的png 原始檔" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="src_atop"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tint預設" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="multiply" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:tint="@android:color/holo_blue_light" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="multiply"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_over" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_over" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="multiply"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_in" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="screen" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_in" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="screen"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_atop" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_atop" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="screen"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = multiply" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="add" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="multiply" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="add"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = screen" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/goldstar" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="screen" />
+    <ImageView
+        android:tint="@android:color/holo_blue_light"
+        android:tintMode="add"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = add" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="add" />
-
-
-        <!--背景透明 內部也有透明的的png-->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="背景透明 內部也有透明 原始檔" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tint預設" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol"
-            android:tint="@android:color/holo_blue_light" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = add" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="add" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = multiply" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="multiply" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = screen" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="screen" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_atop" />
+        android:layout_gravity="fill"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:src="@mipmap/ic_launcher" />
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_atop" />
+</GridLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_over" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_over" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="tintMode = src_in" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/taiwan_symbol"
-            android:tint="@android:color/holo_blue_light"
-            android:tintMode="src_in" />
-    </LinearLayout>
-
-</ScrollView>
