@@ -14,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        tint();
+        tint();
 //        extractProminentColors();
-        extractMainColor();
+//        extractMainColor();
 //        vector();
     }
 
@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
                 Palette.Swatch darkVibrantSwatch = palette.getDarkVibrantSwatch();
                 vibrantDark.setBackgroundColor(darkVibrantSwatch.getRgb());
                 //  vibrantLight is null in this case
-                Palette.Swatch lightVibrantSwatch = palette.getLightVibrantSwatch();
-                vibrantLight.setBackgroundColor(lightVibrantSwatch.getRgb());
+//                Palette.Swatch lightVibrantSwatch = palette.getLightVibrantSwatch();
+//                vibrantLight.setBackgroundColor(lightVibrantSwatch.getRgb());
                 Palette.Swatch mutedSwatch = palette.getMutedSwatch();
                 muted.setBackgroundColor(mutedSwatch.getRgb());
                 Palette.Swatch darkMutedSwatch = palette.getDarkMutedSwatch();
@@ -60,7 +60,9 @@ public class MainActivity extends AppCompatActivity {
         final Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.boat);
 
         Palette.Builder builder = new Palette.Builder(bitmap);
+
         builder.maximumColorCount(1);
+
         builder.generate(new Palette.PaletteAsyncListener() {
             @Override
             public void onGenerated(Palette palette) {
